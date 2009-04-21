@@ -75,4 +75,6 @@ end
 
 if defined?(Rails) and defined?(ActiveRecord) and defined?(ActionController)
   WillPaginate.enable
+elsif defined?(Rails) and defined?(ActionController)
+  WillPaginate.enable_actionpack
 end
